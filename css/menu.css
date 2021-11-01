@@ -123,6 +123,7 @@
 .coffee p{
     padding: 10px;
     line-height: 30px;
+    text-align: justify;
 }
 
 
