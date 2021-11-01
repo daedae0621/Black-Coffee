@@ -1,0 +1,495 @@
+.product .container{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.main-pic img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.main-pic{
+    width: 100%;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.sub-pic{
+    display: none;
+}
+
+.product .txt{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    text-align: justify;
+}
+
+.product .txt .title h2{
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product .txt .title span{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+ 
+.product .price span, .product .price{
+    color:rgb(209, 8, 8);
+    text-align: center;
+}
+.product .price{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product .price span{
+    font-size: 18px;
+}
+ 
+.add{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.add button{
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    height: 49px;
+    font-size: 28px;
+    background-color:rgb(168, 168, 168);
+    color:white;
+    transition: all .5s;
+}
+
+.add :first-child{
+    border-radius: 10px 0 0 10px;
+}
+
+.add :last-child{
+    border-radius: 0 10px 10px 0;
+}
+
+.add input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    background-color: white;
+    border-top: 1px solid rgb(168, 168, 168);
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+.add input:focus{
+    background-color: rgb(253, 255, 236);
+}
+
+.product .btn-group{
+    display: flex;
+    justify-content: end;
+    padding: 15px 0;
+}
+
+.product .cart, .product .buy-now{
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 0;
+    margin: 5px;
+}
+
+.product .cart{
+    background-color: white;
+    border: 2px solid hsl(40 70% 50%);
+    color:hsl(40 70% 50%);
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.product .buy-now{
+    background-color: hsl(40 70% 50%);
+    color:white;
+    font-weight: 600;
+    border: none;
+    padding: 15px 0;
+}
+
+.product .txt p{
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    border-top: 2px solid #ccc;
+    padding: 20px 15px;
+}
+
+ /* -------你可能喜歡------- */
+
+.recommend{
+    background-color: rgb(255, 249, 240);
+    margin-bottom: 0;
+}
+
+ .recommend-group .container{  
+     margin:auto;
+     display: flex;
+     flex-wrap: wrap;
+     padding-bottom: 60px;
+ }
+ 
+ .recommend-group > h2{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: 36px;
+}
+
+ .shop-item{
+     box-sizing: border-box;
+     margin: 20px 10px;
+     display: flex;
+     flex-wrap: wrap;
+     border-radius: 23px;
+     border:1px solid  hsl(40 70% 80%);
+     background-color: white;
+ }
+ 
+ .shop-item .pic{
+     width: 35%;
+     box-sizing: border-box;
+     border-radius: 20px;
+     background-color: hsl(40 70% 80%);
+     
+ }
+ 
+ .shop-item .txt{
+     width: 65%;
+     box-sizing: border-box;
+     display: flex;
+     flex-flow: wrap column;
+     justify-content: space-between;
+     padding: 10px;
+ }
+ 
+ .shop-item .txt ul{
+     width: 100%;
+ }
+ .txt h2{
+     font-size: 20px;
+ }
+ 
+ .shop-item .txt p{
+     padding-top: 10px;
+ }
+ .shop .shop-item p, .shop .shop-item p span{
+     color: rgb(209, 8, 8);
+ }
+ .shop-item .btn{
+     width: 100%;
+     font-size: 20px;
+     border-radius: 10px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between; 
+     font-size: 5px; 
+ }
+ 
+ .shop-item  .btn :first-child{
+     border:1px solid  hsl(40 70% 50%);
+     color:hsl(40 70% 50%);
+ }
+ 
+ .shop-item  .btn :last-child{
+     background-color: hsl(40 70% 50%);
+     color: cornsilk;
+ }
+ 
+ .shop-item  .btn button{
+     box-sizing: border-box;
+     padding:5px;
+     border: none;
+     width:calc(50% - 10px);
+     border-radius: 5px;
+     text-align: center;  
+ }
+
+
+@media screen and (min-width:1024px) {
+    .product .container{
+        padding-top: 130px;
+        padding-bottom: 80px;
+    }
+
+    .product .product-item{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;    
+    }
+
+    /* recommend */
+    .shop-item .btn{
+        display: none;
+    }
+ 
+    .shop{
+        width: 100%;
+    }
+
+    .shop a{
+        width:25%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+   
+
+    .shop .shop-item:hover{
+        top: -15px;
+        box-shadow: 1px 1px 5px #ffffff;
+        transition:top .7s;
+    }
+ 
+   
+    .shop .shop-item .pic{
+        padding: 10px;
+        background-color: white;
+        border: 0;
+        border-radius: 20px 20px 0 0 ;
+        transition:background-color .7s, border-radius .5s;
+    }
+
+    .shop .shop-item:hover .pic{
+        background-color: hsl(40 70% 80%);
+        border-radius: 20px 20px 30% 30%;
+        transition:background-color .7s, border-radius .5s;
+    }
+    .shop .shop-item:hover img{   
+        border-radius: 20px 20px 30% 30%;
+        transition: border-radius .5s;
+    }
+    
+    .shop .shop-item h2{
+       padding-top: 15px;
+        transition: all .5s;
+    }
+    .shop .shop-item:hover h2{
+        color:hsl(40 70% 50%);
+        font-weight: 700;
+    }
+    
+
+    .shop .shop-item .txt > ul > li{
+        text-align: center;
+    }
+
+    .shop .shop-item p{
+        color: rgb(209, 8, 8);
+        padding: 10px;
+        font-weight: 700;
+    }
+    
+    .shop .shop-item p span{
+        font-size: 10px;
+    }
+    
+    .shop img{
+        border-radius: 20px;
+    }
+   
+    .pic-group{
+        width: 50%;
+        padding: 30px 30px 30px 0;
+        box-sizing: border-box;
+    }
+
+    .sub-pic{
+        width: calc(100% + 2px);
+        display: block;
+    }
+    
+    .sub-pic > ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .sub-pic .pic{
+        width: calc(33.333333% - 5px);
+        margin-top: 5px;
+        margin-right: 5px;
+        box-sizing: border-box;
+        border: 1px solid rgb(214, 214, 214);
+       
+    }
+    
+    .sub-pic :last-child {
+        margin-right: 0;
+    }
+    
+    .product .txt{
+        width: 50%;
+        box-sizing: border-box;
+        border-radius: 30px;
+        box-shadow: 1px 1px 5px rgb(114, 117, 85);
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+    }
+    
+    .txt h2{
+        padding: 0;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .txt span{
+        padding: 20px 0 10px 0;
+    }
+    
+    .product .price{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 42px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .product .price span{
+        font-size: 18px;
+    }
+   
+    .product .cart, .product .buy-now{
+        font-size: 20px;
+    }
+    
+    .product .cart{
+        color:hsl(40 70% 50%);
+        transition: all .5s;
+        padding: 10px;
+    }
+    
+    .product .cart:hover{
+        border: 2px solid #ccc;
+        color:#ccc;
+    }
+    
+    .product .buy-now{
+        transition: all .5s;
+        padding: 10px;
+    }
+    
+    .product .buy-now:hover{
+        background-color: #ccc;
+        color:white;
+        border:none;
+    }
+    
+    
+    
+    
+    /* -------你可能喜歡------- */
+    .product, .recommend{
+        background-image: url("../pic/background/white-waves.png");
+    }
+    
+    .recommend-group {
+        padding: 0;
+        background-color: #71A2B6;
+        border-radius: 20% 20% 0 0;
+    }
+   
+    
+    .recommend .shop-item{
+        display: block;
+    }
+    
+    .shop{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .shop .shop-item{
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 10px 40px 10px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 0px rgb(230, 249, 255);
+        position: relative;
+        top: 0;
+        transition:top .7s;
+    }
+    
+    .shop .shop-item:hover{
+        top: -15px;
+        box-shadow: 1px 1px 5px  rgb(157, 199, 255);
+        transition:top .7s;
+    }
+    
+    .shop .pic{
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        border: 0;
+        border-radius: 20px 20px 0 0 ;
+        transition:background-color .7s, border-radius .5s;
+    }
+
+    .shop .shop-item:hover .pic{
+        background-color: hsl(40 70% 80%/.8);
+        border-radius: 20px 20px 30% 30%;
+        transition:background-color .7s, border-radius .5s; 
+    }
+    
+    .shop .shop-item h2{
+        font-size: 18px;  
+        transition: all .5s;
+    }
+    
+    .shop .shop-item:hover h2{
+        color:hsl(40 70% 50%);
+        font-weight: 700;
+    }
+
+    .shop .shop-item .txt{
+        width: 100%;
+    }
+
+    .shop .shop-item p{
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    .shop .shop-item p span{
+        font-size: 10px;
+    }
+    
+    .shop .shop-item p,p span{
+        color: rgb(209, 8, 8);
+    }
+    
+  
+    
+    .shop img{
+        border-radius: 20px;
+    }
+    
+    .shop .shop-item:hover img{
+     
+        border-radius: 20px 20px 30% 30%;
+        transition:background-color .7s, border-radius .5s;
+    }
+}

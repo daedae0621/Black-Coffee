@@ -1,0 +1,39 @@
+.item{
+    margin: 100px 0;
+    /* box-shadow: 1px 1px 5px grey; */
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    border-top-color: blanchedalmond    ;
+}
+
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.news-detail p{
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.back{
+
+    background-color: black;
+    color:white;
+    border:none;
+    padding: 10px 20px;
+    
+}
+
+.change-page{
+    border:none;
+    background-color: transparent;
+
+}

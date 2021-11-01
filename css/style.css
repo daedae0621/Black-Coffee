@@ -1,0 +1,294 @@
+@font-face {
+    font-family:ONEDAY;
+    src: url(../fonts/ONEDAY.ttf);
+}
+
+@font-face {
+    font-family:BRASSIE;
+    src: url(../fonts/Brassie-Regular.otf);
+}
+
+
+*{
+    letter-spacing: 2px;
+    color: rgb(92, 92, 92);
+}
+
+body{
+    font-family: 'Cinzel', serif;
+}
+
+.pic img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'ONEDAY';
+    padding-bottom: 50px;
+}
+
+h2 small{
+    display: block;
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+.fontOneday{
+    font-family: 'ONEDAY';
+}
+
+small,a{
+    font-family: 'Cinzel', serif;
+}
+
+a{
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a:link{
+    color:rgb(27, 27, 27);
+    
+}
+
+a:visited{
+    color:rgb(27, 27, 27);
+}
+
+a:hover{
+    color:hsl(40 70% 50%);
+}
+   
+a:active{
+    color:hsl(40 70% 50%);
+}
+
+
+/* ==============navigation=============== */
+
+header .logo h1{
+    font-size: 20px;
+    padding: 0;
+}
+
+header .pic{
+    width: 60px;
+}
+
+
+header .pic img{
+    width: 100%;
+    justify-content: center;
+}
+
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100vw;
+    box-sizing: border-box ;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 1px 10px rgb(224, 224, 224);
+    z-index: 7;
+
+}
+
+.main-header .logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-header small{
+    font-size: 14px;
+    display: block;
+}
+
+.main-header small{
+    font-size: 14px;
+    display: block;
+}
+
+.main-header a:hover small{
+    color:hsl(40 70% 50%);
+    transition: all .2s;
+}
+
+
+@media screen and (max-width:1024px) {
+      .main-header > .d-none{
+        display: none;
+    }
+    #menu{
+        position: absolute;
+        background-image:url(../pic/deco/beansAndLeaf.png),linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+        background-repeat: no-repeat;
+        background-position:right 90%,center center;
+        background-size: 80vw,100vw;
+        z-index: 7;
+        top: 59.5px;
+        left:-100%;
+        width: 100%;
+        height: calc(100vh - 59px);
+        transition: left 1s;
+    }
+
+        
+    #menu.hidden{
+        left: 0;
+    }
+   
+    .nav-item{
+        padding-top: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    
+    /* hamburger */
+    .hb {
+        width: 40px;
+        height: 40px;
+        border-radius:10%;
+        border: none;
+        position: relative;
+        background-color:transparent;
+        margin-right: 20px;
+     
+    }
+
+    .hb span {
+        display: block;
+        height: 2px;
+        width: 32px;
+        background-color: rgb(36, 36, 36);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .hb span:first-child {
+        top: -20px;
+        background-color: turquoise;
+        transform: rotate(0deg);
+    }
+
+    .hb span:last-child {
+        bottom: -20px;
+        transform: rotate(0deg);
+    }
+
+    .hb span:nth-child(2) {
+        top: 0;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .hb{
+        display: none;
+    }
+
+    #menu .nav-shop{
+        display: none;
+    }
+
+    .main-nav > ul{
+        display: flex;
+    }
+
+    .nav-item{
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .nav-item a{
+        line-height: 20px;
+    }
+
+    .main-header{
+        padding: 0 50px;
+    }
+}
+
+
+/* --------footer--------- */
+footer{
+    background-color:rgb(145, 123, 64,.1);
+}
+
+.footer{
+    padding: 30px 0;
+    text-align: left;
+}
+
+.footer > .row{
+    justify-content: space-around;
+    background-color: brown;
+    padding: 0 30px;
+}
+
+footer .text-center{
+    text-align: center;
+}
+
+footer h2{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+footer li{
+    padding: 10px;
+}
+
+footer .follow{
+    display: flex;
+}
+
+
+.copy-right{
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.copy-right p{
+    font-size: 14px;
+    color: rgb(168, 168, 168);
+    line-height: 22px;
+    letter-spacing: 3px;
+    padding: 0 15px;
+}
+
+@media screen and (max-width:1024px) {
+   
+   
+    .row.flex-center {
+        display: flex;
+        justify-content: center;
+     }
+
+    .footer{
+         padding-bottom: 50px;
+     }
+    .footer h2, .footer li{
+        text-align: center;
+    }
+    .footer h2{
+        padding-top:50px
+    }
+}

@@ -1,0 +1,173 @@
+
+
+.about h2{
+    padding: 40px 0;
+    font-size: 48px;
+    padding-top: 140px;
+    text-align: center;
+    position: relative;
+}
+
+.about h2 small{
+    display: block;
+    font-size: 24px;
+    
+}
+
+/* .about  h2:after{
+    content:'';
+    width: 300px;
+    height: 50px;
+    background-color: hsl(40 70% 50%/.3);;
+    position: absolute;    
+    bottom: 30px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    animation: underline 1s cubic-bezier(.16,.05,.51,1.68);
+} */
+
+.about .txt {
+    padding: 0 10px;
+
+}
+
+@keyframes underline{
+    0%{
+        transform: scalex(0);
+        transform-origin: left;
+    }
+    100%{
+        transform: scale(1);
+        transform-origin: left;
+    }
+}
+
+.about section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    background-color: hsl(40 70% 50%/.3);    
+}
+
+
+.about .pic{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.about .pic img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.about .txt{
+    width: 50%;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 50px;
+  
+}
+
+.about  span{
+    display: block;
+    font-size: 150px;
+    color:hsl(40 70% 75%);
+    transform: rotate(-90deg) translateX(50%) ;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+.about .txt h3{
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    text-align: left;
+    color:hsl(40 70% 70%);
+   
+}
+.about .txt h3 small{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    padding:10px 0;
+    color:hsl(40 70% 50%);
+}
+.about .txt p{
+    letter-spacing: 2px;
+    font-size: 1rem;
+    line-height: 36px;    
+    text-align: justify;
+}
+
+
+.phone-pic{
+    display: none;
+}
+
+
+@media screen and (max-width:414px) {
+    .about .txt{
+        padding: 30px 50px;
+    }
+
+    .about  span{
+        display:none;
+    }
+    
+    .about .txt p{
+        font-size: 18px;
+        line-height: 30x;
+        letter-spacing: 4px;
+      
+    }
+
+    .about .txt h3{
+        font-size: 30px;
+        display: inline-block;
+    }
+
+    .about .txt h3 small{
+        font-size: 18px;
+        padding: 0px;
+    }    
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .about section{
+        display: block;
+    }
+
+    .about .pic{
+        width: 100%;
+    }
+
+    .about .pic img{
+       width:  100%;
+    }
+
+    .pc-pic{
+        display: none;
+    }
+ 
+    .phone-pic{
+        display: block;
+    }
+  
+    .about .txt{
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        flex-direction: column; 
+   }
+
+}
+

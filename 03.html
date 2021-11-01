@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #aaa;
+            position: relative;
+            padding: 5px 10px;
+        }
+
+        .logo img {
+            vertical-align: top;
+        }
+
+
+
+        .main-nav a {
+            padding: 10px 20px;
+        }
+
+
+        #menu-control {
+            display: none;
+        }
+
+
+        /* ================================== */
+        @media screen and (max-width:1024px) {
+            .main-nav {
+                position: relative;
+                background-color: transparent;
+                top: 0;
+                left: 0;
+                width: auto;
+                height: auto;
+
+            }
+
+            .hb {
+
+                width: 40px;
+                height: 40px;
+                background-color: black;
+                position: relative;
+            }
+
+            .hb span {
+                display: block;
+                height: 2px;
+                width: 32px;
+                background-color: white;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transition:
+                    top .3s .3s,
+                    bottom .3s .3s,
+                    transform .2s;
+            }
+
+            .hb span:first-child {
+                top: -20px;
+                background-color: turquoise;
+                transform: rotate(0deg);
+            }
+
+            .hb span:last-child {
+                bottom: -20px;
+                transform: rotate(0deg);
+            }
+
+            .hb span:nth-child(2) {
+                top: 0;
+                bottom: 0;
+            }
+
+
+
+            .main-nav {
+                position: absolute;
+                background-color: wheat;
+                top: 100%;
+                left: -80%;
+                width: 80%;
+                height: calc(100vh - 50px);
+                transition: left .7s;
+            }
+
+            .main-nav a {
+                display: block;
+            }
+
+            #menu-control:checked~.main-header .main-nav {
+                left: 0;
+            }
+
+            #menu-control:checked~.main-header .hb span:first-child {
+                top: 0;
+                transform: rotate(225deg);
+                transition:
+                    top .3s,
+                    bottom .3s,
+                    transform .2s .3s;
+
+
+            }
+
+            #menu-control:checked~.main-header .hb span:last-child {
+                transform: rotate(-225deg);
+                bottom: 0;
+                transition:
+                    top .3s,
+                    bottom .3s,
+                    transform .2s .3s;
+
+            }
+
+            .hb span:nth-child(2) {
+                opacity: 1;
+            }
+
+            #menu-control:checked~.main-header .hb span:nth-child(2) {
+                opacity: 0;
+            }
+        }
+
+        /* ================================== */
+
+        @media screen and (min-width:1200px) {
+            .logo img {
+                vertical-align: top;
+            }
+
+            .hb {
+                display: none;
+            }
+
+            #menu-control:checked~.main-header .main-nav {
+                left: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-control">
+    <header class="main-header">
+        <h1 class="logo">
+            <a href="#">
+                <img src="https://picsum.photos/100/40/?random=1">
+            </a>
+        </h1>
+
+        <label for="menu-control" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="main-nav">
+            <a href="#">咖啡/糕點</a>
+            <a href="#">關於黑咖灰</a>
+            <a href="#">店家資訊</a>
+            <a href="#">最新消息</a>
+            <a href="#">線上商店</a>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+.row{
+    justify-content: center;
+}
+
+article > h2{
+    margin-top: -20px;
+    padding: 130px 0;
+    background:url(../pic/shop/banner2.jpg);
+    background-position: center right;
+    background-size: cover;
+    color:rgb(255, 255, 255);
+}
+
+article > h2 small{
+    color:white;
+}
+
+article .container{
+    position: relative;
+    z-index: 1;
+}
+
+article .decoPic{
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    right: 0;
+    z-index: 0;
+    display: none;
+}
+
+article .decoPic img{
+ width: 100%;
+}
+
+ .bannerPic img{
+     margin-top: -20px;
+    width: 100%;
+    /* object-fit: cover;
+    object-position: center bottom; */
+}
+/* 側邊欄 */
+aside {
+    max-width: 200px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0 rgb(209, 209, 209);
+    position: sticky;
+    top: 80px;   
+}
+
+aside .list > h2{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.list-item.check{
+    display: none;
+}
+.list i{
+    color:hsl(40 70% 50%);
+    padding-left: 5px;
+}
+
+.list h2{
+    font-size: 24px;
+}
+
+.list li{
+    position: relative;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.list > li > ul{
+    padding: 10px 0; 
+}
+
+.list :nth-child(2) :first-child a {
+    font-weight: bold;
+    background-color: rgb(253, 252, 202);
+    color:rgb(27, 27, 27);
+}
+
+.list li a{
+    display: block;
+    padding: 10px;  
+}
+
+.list > li + li:before{
+    content: "";
+    border-top: 1px solid #ccc;
+        position:absolute;
+        top: 0;
+        left: 10px;
+        right: 10px;
+}
+
+.list-item :first-child{
+    background-color: rgb(253, 252, 202);
+}
+
+.list-item li:hover{
+    background-color: rgb(253, 252, 202);
+
+}
+
+.list-item li:hover a{
+    background-color: rgb(253, 252, 202);
+   
+}
+
+/* 產品 */
+article{
+   padding-top: 80px;
+}
+
+aside{
+    display: none;
+}
+
+article .container{  
+    max-width: 960px;
+    padding-top: 50px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.shop-item{
+    box-sizing: border-box;
+    margin: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 23px;
+    border:1px solid  hsl(40 70% 80%);
+   
+}
+
+.shop-item .pic{
+    width: 35%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: hsl(40 70% 80%);
+    
+}
+
+.shop-item .txt{
+    width: 65%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.shop-item .txt ul{
+    width: 100%;
+}
+.txt li h3{
+    font-size: 20px;
+    text-align: left;
+    padding: 0;
+}
+
+.shop-item .txt p{
+    padding-top: 10px;
+}
+.shop .shop-item p, .shop .shop-item p span{
+    color: rgb(209, 8, 8);
+}
+.shop-item .btn{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    font-size: 5px; 
+}
+
+.shop-item  .btn :first-child{
+    border:1px solid  hsl(40 70% 50%);
+    color:hsl(40 70% 50%);
+    background-color: white;
+}
+
+.shop-item  .btn :last-child{
+    background-color: hsl(40 70% 50%);
+    color: rgb(255, 255, 255);
+}
+
+.shop-item  .btn button{
+    box-sizing: border-box;
+    padding:5px;
+    border: none;
+    width:calc(50% - 10px);
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    
+    aside{
+        display: block;
+        width: calc(23% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+   .shop{
+       width: 77%;
+   }
+   .txt li h3{
+        font-size: 20px;
+        text-align: left;   
+        padding: 0;
+    }
+
+  
+}
+
+@media screen and (min-width:1024px){
+    aside{
+        width: calc(25% - 20px);
+        display: block;
+        margin: 10px;
+    }
+    
+    .shop{
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    article .decoPic{
+        display: block;
+    }
+    
+    .shop a{
+        width: 50%;
+    }
+
+    .shop-item{
+       
+        flex-direction: column;
+        margin:10px;
+    }
+ 
+    .shop-item .pic{
+        width: 100%;
+    }
+    .shop-item .txt{
+        width: 100%;
+    }
+    .shop .shop-item .txt > ul > li{
+        text-align: center;
+    }
+
+    .shop .shop-item h3{
+        padding: 10px 0;
+        font-size: 18px;  
+        text-align: center;
+     
+    }
+    .shop-item .btn{
+        display: none;
+       
+    }
+ 
+    /* .list-item .hidden{
+        display: block;
+    } */
+}
+
+@media screen and (min-width:1200px) {
+    .shop-item .btn{
+        display: none;
+    }
+ 
+    aside{
+        width: calc(20.8333333333% - 20px);
+    }
+
+    .shop{
+        width: 79.166667%;
+    }
+
+    .shop a{
+        width: 33.333333%;
+    }
+
+    .shop .shop-item{
+        border:none;
+        border-radius: 20px;
+        box-shadow: 1px 1px 5px rgb(209, 209, 209);
+        position: relative;
+        top: 0;
+        transition:top .7s;        
+    }
+
+    .shop .shop-item:hover{
+        top: -15px;
+        box-shadow: 5px 5px 5px rgb(197, 197, 197);
+        transition:top .7s;
+    }
+
+    
+    .shop .shop-item .pic{
+        padding: 10px;
+        background-color: white;
+        border: 0;
+        border-radius: 20px 20px 0 0 ;
+        transition:background-color .7s, border-radius .5s;
+    }
+
+    .shop .shop-item h3{
+     
+        transition: all .5s;
+    }
+    .shop .shop-item:hover h2{
+        color:hsl(40 70% 50%);
+        font-weight: 700;
+    }
+
+    .shop .shop-item .txt > ul > li{
+        text-align: center;
+    }
+
+    .shop .shop-item p{
+        padding: 0 20px;
+        font-weight: 700;
+    }
+    
+    .shop .shop-item p span{
+        font-size: 10px;
+    }
+    
+    .shop .shop-item p, .shop .shop-item p span{
+        color: rgb(209, 8, 8);
+    }
+    
+    .shop .shop-item:hover .pic{
+        background-color: hsl(40 70% 80%);
+        border-radius: 20px 20px 30% 30%;
+        transition:background-color .7s, border-radius .5s;
+    }
+    
+    .shop img{
+        border-radius: 20px;
+    }
+    
+    .shop .shop-item:hover img{   
+        border-radius: 20px 20px 30% 30%;
+        transition:background-color .7s, border-radius .5s;
+    }
+}

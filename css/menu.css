@@ -1,0 +1,302 @@
+.list{
+    background: url(../pic/background/p0113_m.jpg);
+    box-shadow: 5px 5px 5px rgb(233, 229, 224);
+    max-width: 960px;
+    margin: auto;
+    padding: 10px 0 ;
+    margin-top: 20px;
+}
+
+.coffee .list > ul{
+   display: flex;
+   justify-content: center;
+   margin: 0 10px;
+}
+
+.coffee .list > ul > li{
+    font-size: 16px;
+    padding: 10px 30px;
+    border-right: 1px solid gray;
+    cursor: pointer;
+}
+
+.coffee .list > ul > li:hover{
+    background-color: rgb(214, 162, 51,.5);
+}
+
+.coffee .list > ul > li:last-child{
+    border-right: none;
+}
+
+.coffee > h2{
+    margin-top: 60px;
+    padding: 130px 0;
+    background:url(../pic/menu/menuBanner.jpg);
+    background-position: center right;
+    background-size: cover;
+    color:whitesmoke;
+}
+
+.coffee h2 small{
+    color:rgb(187, 187, 187);
+}
+
+
+.coffee{
+    position: relative;
+}
+
+.coffee .container{
+    position: relative;
+    background: url(../pic/background/p0113_m.jpg);
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(233, 229, 224);
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.container > h2{
+    text-align: center;
+    padding: 0;
+    padding-bottom: 80px;
+}
+
+.coffee .pic {
+    box-sizing: border-box;
+    width: 100%;    
+    position: relative;
+    display: flex;
+    padding: 0 30px;
+}
+
+
+.coffee .menu-item .pic img{
+    border-radius: 50%;
+    box-shadow: 20px 20px 3px   rgba(194, 194, 194,.5);
+}
+
+
+.coffee .txt{
+    box-sizing: border-box;
+    max-width: 640px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.coffee .title{
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.coffee h3{
+    text-align: left;
+    font-size: 32px;
+    color: hsl(40 70% 50%);
+    font-weight: bold;
+    text-align: center;
+}
+
+.coffee .title h3 small{
+    font-size: 18px;
+    display: block;
+    padding-top: 10px;
+    color: hsl(40 70% 70%);
+}
+
+.coffee .txt span{
+  color:red;
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+}
+
+.coffee p{
+    padding: 10px;
+    line-height: 30px;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .list{   
+        border-radius: 30px;
+    }
+
+    .coffee .list > ul{
+       display: flex;
+       justify-content: center;
+    }
+    
+    .coffee .list > ul > li{
+        font-size: 24px;
+    }
+    
+    .coffee .list > ul > li:hover{
+        background-color: rgb(214, 162, 51,.5);
+    }
+    
+    .coffee .list > ul > li:last-child{
+        border-right: none;
+    }
+    
+    .coffee > h2{
+        margin-top: 60px;
+        padding: 130px 0;
+        background:url(../pic/menu/menuBanner.jpg);
+        background-position: center right;
+        background-size: cover;
+        color:whitesmoke;
+    }
+    
+    .coffee h2 small{
+        color:rgb(187, 187, 187);
+    }
+    .coffee{
+        position: relative;
+    }
+    
+    .coffee .container{
+        position: relative;
+        background: url(../pic/background/p0113_m.jpg);
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px rgb(233, 229, 224);
+        margin-top: 20px;
+        margin-bottom: 80px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    
+    .container > h2{
+        text-align: center;
+        padding: 0;
+       
+    }
+
+    .coffee .menu-item{
+        display: flex;
+        align-items: center;
+    
+    } 
+    .menu-wrap :nth-child(even){
+        flex-direction: row-reverse;
+    } 
+    
+    .menu-wrap :nth-child(even) .pic{
+        padding-right: 50px;
+        
+    } 
+    
+    .menu-wrap :nth-child(odd) .pic{
+        padding-left: 50px;
+        
+    } 
+    .coffee .pic {
+        box-sizing: border-box;
+        width: 320px;    
+        position: relative;
+    }
+    
+    
+    .coffee .menu-item:nth-child(odd) img{
+        border-radius: 50%;
+        box-shadow: 20px 20px 3px   rgba(194, 194, 194,.5);
+       
+    }
+    
+    .coffee .menu-item:nth-child(even) img{
+        border-radius: 50%;
+        box-shadow: -20px 20px 3px rgb(194, 194, 194,.5);
+    }
+    
+    .coffee .txt{
+        box-sizing: border-box;
+        width: 640px;
+        padding:0  50px;
+        margin: 80px 0;
+    }
+    
+    
+    .menu-wrap :nth-child(odd) .txt{
+        padding-right: 100px;
+        
+    } 
+    .menu-wrap :nth-child(even) .txt{
+        padding-left: 100px;
+        
+    } 
+    
+    
+    .coffee .title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+    
+    .coffee .title::before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(197, 197, 197);
+        position: absolute;
+        bottom: -14px;
+        left: 10px;
+        right: 10px;
+       margin-right: 10px;
+        
+    }
+    
+    .coffee h3{
+        text-align: left;
+        font-size: 32px;
+        color: hsl(40 70% 50%);
+        font-weight: bold;
+    }
+    
+    .coffee .title h3 small{
+        font-size: 18px;
+        display: block;
+        padding-top: 10px;
+        color: hsl(40 70% 70%);
+    }
+    
+    .coffee .txt span{
+      display: inline;
+    }
+    
+    .coffee p{
+        margin-top: 30px;
+        padding-left: 10px;
+        line-height: 30px;
+    }
+    
+    .back-to-top{
+        background-color: rgb(41, 41, 41);
+        color: white;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+    }
+    
+}

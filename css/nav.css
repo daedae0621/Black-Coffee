@@ -1,0 +1,240 @@
+*{
+    letter-spacing: 3px;
+    color: rgb(27, 27, 27);
+}
+/* --------font-szie-------- */
+.text-s{
+    font-size: 20px;
+}
+.text-m{
+    font-size: 24px;
+}
+.text-l{
+    font-size: 28px;
+}
+.text-xl{
+    font-size: 32px;
+}
+.text-2xl{
+    font-size: 48px;
+}
+.text-3xl{
+    font-size: 56px;
+}
+
+
+/* ----------button--------- */
+button{
+    cursor: pointer;
+}
+
+
+h1{
+    font-size: 68px;
+    text-align: center;
+}
+
+h2{
+    font-size: 54px;
+    padding: 25px;
+    text-align: center;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 37px;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a:link{
+    color:rgb(27, 27, 27);
+    
+}
+
+a:visited{
+    color:rgb(27, 27, 27);
+}
+
+a:hover{
+    color:hsl(40 70% 50%);
+}
+.nav-list a:hover{
+    text-shadow: 5px 5px 5px hsl(40 70% 80%);
+}
+   
+a:active{
+    color:hsl(40 70% 50%);
+}
+
+.container{
+    margin: 20px auto;
+    width: 960px;
+    /* margin: auto; */
+}
+
+
+.logo .pic{
+    width: 100px;
+}
+
+ img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+
+
+/* --------nav-------- */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(0 0% 100%);
+    box-shadow: 0px 1px 2px hsl(0 0% 90%/.8);
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo p{
+    width: 100%;
+    padding-left: 20px;
+    font-size: 24px;    
+}
+
+.nav-list{
+    position: relative;
+    right: 60px;
+}
+
+.nav-list ul{
+    display: flex;
+
+}
+
+.nav-list li{
+    padding: 0 20px;
+
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.nav-list a{
+    text-align:center;
+}
+
+.nav-online-shop{
+    padding-right: 20px;
+}
+
+/* --------sticky-------- */
+.sticky{
+    position: relative;
+}
+
+.sticky nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+
+
+/* --------footer-------- */
+.footer{
+    background-color:rgb(145, 123, 64,.1);
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+
+
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-around;
+} 
+
+.footer .wrap{
+    display: flex;
+}
+
+.footer span{
+    display: block;
+    padding-top: 20px;
+}
+
+.footer .site-map .wrap-item:first-of-type{
+    padding-right: 50px;
+}
+
+.footer .follow{
+    padding-top: 5px;
+}
+
+.footer .follow .social-media{
+    display: flex;
+    padding-top: 20px;
+}
+.footer .social-media{
+   
+    padding-right: 10px;   
+}
+
+.footer .social-media a{
+    padding-right: 10px;
+}
+
+
+.bold{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.copy-right{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+   
+}
+
+.copy-right p{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(168, 168, 168);
+    line-height: 22px;
+    letter-spacing: 3px;
+}
+
+
+.copy-right .pic{
+    padding: 5px;
+    width: 50px;
+}
+
