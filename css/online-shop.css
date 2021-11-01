@@ -2,6 +2,10 @@
     justify-content: center;
 }
 
+.list .open{
+    display: block;
+}
+
 article > h2{
     margin-top: -20px;
     padding: 130px 0;

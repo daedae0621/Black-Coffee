@@ -320,14 +320,18 @@
         margin-right: 5px;
         }
 
-        .pic-group :nth-child(3){
+        /* .pic-group :nth-child(3){
             border: 3px solid hsl(40 70% 50%);
             padding: 3px;
+        } */
+        .pic-group :nth-child(3){
+                    margin-left: 5px;
         }
-
+        
         .pic-group :nth-child(5){
             margin-left: 5px;
         }
+       
 
         .pic-group .pic{
             margin: 0 5px;
@@ -338,6 +342,10 @@
         }
 
         .pic-group :nth-child(2):hover, .pic-group :nth-child(4):hover{
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        .pic-group :nth-child(3):hover{
             border: 2px solid black;
             cursor: pointer;
         }
