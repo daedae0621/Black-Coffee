@@ -23,10 +23,9 @@
 .news-detail .content{
     overflow:auto;
     max-width: 70vw;
-    max-height: 90vh;
-    /* box-shadow: 20px 0px 0px rgba(179, 114, 61, 0.322); */
+    max-height: 80vh;
     border-radius: 20px;
-    background-color: rgba(216, 227, 233, 0.76);
+    background-color: rgba(233, 221, 216, 0.76);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -39,7 +38,7 @@
     font-size: 36px;
     text-align: center;
     color:rgb(255, 255, 255);
-    background-color: rgb(201, 124, 79);
+    background-color: rgba(201, 124, 79, 0.959);
     position: sticky;
     top: 0;
 }
@@ -63,7 +62,6 @@
    border:none;
    color:white;
    font-size: 20px;
-
 }
 
 
