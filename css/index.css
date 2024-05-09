@@ -6,6 +6,10 @@
         display: none;
     }
 
+    i.select{
+        visible: hidden;
+    }
+
     @media screen and (min-width:1024px) {
         .banner{
             display: block;
